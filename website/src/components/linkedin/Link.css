@@ -1,0 +1,11 @@
+.linkedin-logo {
+    position: absolute;
+    
+}
+.svg {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(283deg) brightness(103%) contrast(101%);
+    height: 70px;
+    top: 40px;
+    right: 5%;
+    z-index: 3;
+}

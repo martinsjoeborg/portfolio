@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+.name {
+    position: absolute;
+    top: 20px; /* Adjust this value to move the name down */
+    left: 20px; /* Adjust this value to move the name to the right */
+    z-index: 3;
+    font-size: 6rem; /* Adjust font size if needed */
+    color: rgb(255, 255, 255); /* Ensure the text color is visible */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+.first {
+    position: relative;
+    color: rgb(11, 217, 131);
+    left: 0;
+}
+.last {
+    position: relative;
+    left: 0;
+}
