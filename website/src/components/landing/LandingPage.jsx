@@ -6,7 +6,7 @@ import ProfileImg from "../profile-img/ProfileImg";
 import "./LandingPage.css"
 import { useEffect } from "react";
 
-const LandingPage = ({ onClick }) => {
+const LandingPage = () => {
 
     useEffect(() => {
         const cursorDot = document.querySelector("[data-cursor-dot]");
@@ -47,7 +47,7 @@ const LandingPage = ({ onClick }) => {
             <Linkish />
             <Name />   
             <ProfileImg />
-            <Footer onClick={onClick} />
+            {/* <Footer /> */}
         </div>
     );
 }

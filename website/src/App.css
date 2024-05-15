@@ -1,4 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
 .App {
     width: 100vw;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.nav-container {
+    position: fixed; /* Changed from absolute to fixed to ensure it stays at the bottom even when scrolling */
+    bottom: 5%;
+    left: 50%; /* Center the nav-container horizontally */
+    transform: translateX(-50%); /* Adjust the nav-container's position to perfectly center it */
+    color: white;
+    z-index: 3;
+    cursor: none;
+    display: flex; /* Use flexbox to center the ul-container */
+    justify-content: center; /* Center the ul-container horizontally */
+    align-items: center; /* Center the ul-container vertically if needed */
+    width: 100%; /* Ensure the nav-container spans the full width of the viewport */
+}
+
+.nav-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30%;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-container ul Link {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    transition: all 0.2s ease-in-out;
+    padding-left: 5px;
+}
+
+.nav-container ul Link:hover {
+    background-color: rgb(11, 217, 131);
+    color: black;
+    cursor: crosshair;
+}
+.page2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
 }

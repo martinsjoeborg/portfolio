@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
 .container {
     position: absolute;
     display: flex;
@@ -38,6 +40,7 @@
 }
 
 .hover-text {
+    font-family: "Inter", sans-serif;
     pointer-events: none;
     position: relative;
     width: 250px;

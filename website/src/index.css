@@ -18,3 +18,6 @@ body::-webkit-scrollbar {
     border: 2px solid white;
     width: 10px;
   }
+  * {
+    scroll-behavior: smooth;
+  }
