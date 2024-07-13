@@ -18,7 +18,7 @@ const ProfileImg = () => {
                         <br />
                         <div>Age: 26</div>
                         <br />
-                        <div>Bio: Fullstack developer from Sweden who likes code.</div>
+                        <div>Location: Luleå, SWE</div>
                     </div>
                     <div className="bracket2">&#125;</div>
                 </div>
