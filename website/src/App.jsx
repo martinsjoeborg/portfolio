@@ -16,25 +16,31 @@ function App() {
 
   function handlePortfolioClick(e) {
     e.preventDefault();
-    setShowPortfolio(true)
-    setShowAbout(false)
-    setShowResume(false)
-    return true
+    setShowPortfolio(true);
+    setShowAbout(false);
+    setShowResume(false);
+    document.getElementById('page2').scrollIntoView({ behavior: 'smooth' });
+    return false; // Prevent default action
   }
+  
   function handleAboutClick(e) {
     e.preventDefault();
-    setShowPortfolio(false)
-    setShowAbout(true)
-    setShowResume(false)
-    return true
+    setShowPortfolio(false);
+    setShowAbout(true);
+    setShowResume(false);
+    document.getElementById('page2').scrollIntoView({ behavior: 'smooth' });
+    return false;
   }
+  
   function handleResumeClick(e) {
     e.preventDefault();
-    setShowPortfolio(false)
-    setShowAbout(false)
-    setShowResume(true)
-    return true
+    setShowPortfolio(false);
+    setShowAbout(false);
+    setShowResume(true);
+    document.getElementById('page2').scrollIntoView({ behavior: 'smooth' });
+    return false;
   }
+  
 
 
   return (
@@ -49,9 +55,9 @@ function App() {
 
       <nav className="nav-container">
         <ul className="ul-container">
-          <a href='#page2' className="li-portfolio" onClick={(e) => handlePortfolioClick}>PORTFOLIO</a>
-          <a href='#page2' className="li-about" onClick={(e) => handleAboutClick}>ABOUT</a>
-          <a href='#page2' className="li-resume" onClick={(e) => handleResumeClick}>RESUME</a>
+          <a href='#page2' className="li-portfolio" onClick={handlePortfolioClick}>Portfolio</a>
+          <a href='#page2' className="li-about" onClick={handleAboutClick}>About</a>
+          <a href='#page2' className="li-resume" onClick={handleResumeClick}>Résumé</a>
 
         </ul>
       </nav>
@@ -62,7 +68,7 @@ function App() {
           <div>
             {showAbout ? <About /> :
             <div>
-              {showResume}
+              {showResume ? <Resume />:null}
             </div> }
           </div>
         

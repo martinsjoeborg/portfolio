@@ -15,8 +15,8 @@
 
 .profile-img {
     position: absolute;
-    height: 300px;
-    width: 290px;
+    height: 370px;
+    /* width: 290px; */
     border-radius: 100%;
     border: 3px solid #ffffff;
     z-index: 1;
@@ -44,7 +44,7 @@
     pointer-events: none;
     position: relative;
     width: 250px;
-    top:20%;
+    top:25%;
     left: -10px;
     visibility: hidden;
     opacity: 0;

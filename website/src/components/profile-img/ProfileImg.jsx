@@ -1,5 +1,5 @@
 import "./ProfileImg.css"
-import img from "../../assets/img/jagjag.jpg"
+import img from "../../assets/img/proffebild.png"
 
 const ProfileImg = () => {
 
