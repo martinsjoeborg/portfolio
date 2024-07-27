@@ -18,6 +18,9 @@ body::-webkit-scrollbar {
     border: 2px solid white;
     width: 10px;
   }
+  body::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+  }
   * {
     scroll-behavior: smooth;
   }

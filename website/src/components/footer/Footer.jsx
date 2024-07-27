@@ -8,7 +8,7 @@ const Footer = () => {
             <ul className="ul-container">
                 <a className="li-portfolio">PORTFOLIO</a>
                 <a className="li-about">ABOUT</a>
-                <a className="li-resume">Résumé</a>
+                <a className="li-resume">Resume</a>
             </ul>
         </nav>
     );

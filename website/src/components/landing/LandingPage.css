@@ -10,11 +10,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: none;
+    /* cursor: none; */
     overflow-x: hidden;
 }
 
-.darkener {
+/* .darkener {
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -46,4 +46,4 @@
     border-radius: 50%;
     z-index: 1;
     pointer-events: none;
-}
+} */

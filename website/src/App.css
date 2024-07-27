@@ -13,7 +13,7 @@
     transform: translateX(-50%); /* Adjust the nav-container's position to perfectly center it */
     color: white;
     z-index: 3;
-    cursor: none;
+    /* cursor:auto; */
     display: flex; /* Use flexbox to center the ul-container */
     justify-content: center; /* Center the ul-container horizontally */
     align-items: center; /* Center the ul-container vertically if needed */
