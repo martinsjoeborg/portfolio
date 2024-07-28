@@ -2,10 +2,13 @@ import "./Portfolio.css"
 import wealthroneLogo from "../../assets/img/wealthrone-logo.png"
 import { useState } from "react";
 import WealthroneModal from "./portfolio-groups/wealthrone/wealthroneModal";
+import backVid from "../../assets/videos/backgroundVid.mp4";
 
 const Portfolio = () => {
 
     const [wealthroneModalOpen, setWealthroneModalOpen] = useState(false);
+
+    const setPlayBackSpeed = "";
 
     return (
         <div className="portfolio-main">
@@ -18,7 +21,9 @@ const Portfolio = () => {
                 <div></div>
             }
 
-        
+        <video autoPlay muted loop id="myVideo" className="backVid">
+            <source src={backVid} type="video/mp4" />
+        </video>
 
             <h2>My Portfolio</h2>
 

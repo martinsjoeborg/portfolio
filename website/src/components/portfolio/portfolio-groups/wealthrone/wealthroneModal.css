@@ -10,8 +10,14 @@
     margin-right: auto; 
     width: 95vw;
     height: 80vh;
-    background-color: rgba(179, 178, 174, 0.979);
+    background-color: rgba(241, 241, 241, 0.979);
     color: black;
+    z-index: 3;
+}
+
+.title {
+  padding-bottom: 3%;
+  padding-top: 5%;
 }
 
 .modal-content {
@@ -20,51 +26,27 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+    justify-content: left;
    margin: auto;
-   height: 80vh;
+   height: 70vh;
+   width: 90vw;
    top: 3%;
+    /* Optional: Set a specific width */
+   border: 1px solid #000; /* Optional: Add a border for visibility */
+   overflow-y: auto; /* Enable vertical scrolling */
 }
 
-.btn-container {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    right: 5%;
-}
-
-.btn-container .btn {
-    
-  align-items: center;
-  background: #f5f5fa;
-  border: 0;
-  border-radius: 8px;
-  box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
-  box-sizing: border-box;
-  color: #2a1f62;
-  cursor: pointer;
-  display: flex;
-  font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
-  font-size: 1rem;
-  justify-content: center;
-  line-height: 1.5rem;
-  padding: 15px;
+.btn {
   position: relative;
-  text-align: left;
-  transition: .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: pre;
-  width: max-content;
-  word-break: normal;
-  word-spacing: normal;
+  left: 40%;
 }
 
-.btn-container .btn {
-  background: #f8f8ff;
-  box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+
+
+.mainText {
+  padding-top: 3%;
 }
+
 
 @media (min-width: 768px) {
   .button-67 {
@@ -75,7 +57,7 @@
 
 /* Parent background */
 #F5F5FA
-}
+
 .btn-container .btn:hover {
     cursor: pointer;
 }
