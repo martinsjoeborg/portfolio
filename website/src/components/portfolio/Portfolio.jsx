@@ -10,7 +10,13 @@ const Portfolio = () => {
 
     const setPlayBackSpeed = "";
 
+    // document.querySelector('video').defaultPlaybackRate = 2.0;
+    // document.querySelector('video').play();
+
+    document.querySelector('video');
+
     return (
+
         <div className="portfolio-main">
 
             { wealthroneModalOpen ?
@@ -21,7 +27,7 @@ const Portfolio = () => {
                 <div></div>
             }
 
-        <video autoPlay muted loop id="myVideo" className="backVid">
+        <video autoPlay muted loop id="video" className="backVid">
             <source src={backVid} type="video/mp4" />
         </video>
 
