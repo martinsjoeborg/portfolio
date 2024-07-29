@@ -8,16 +8,16 @@
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
-    width: 95vw;
-    height: 80vh;
-    background-color: rgba(241, 241, 241, 0.979);
-    color: black;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.970);
+    color: white;
     z-index: 3;
 }
 
 .title {
   padding-bottom: 3%;
-  padding-top: 5%;
+  /* padding-top: 5%; */
 }
 
 .modal-content {
@@ -28,23 +28,43 @@
     align-items: center;
     justify-content: left;
    margin: auto;
-   height: 70vh;
-   width: 90vw;
-   top: 3%;
-    /* Optional: Set a specific width */
-   border: 1px solid #000; /* Optional: Add a border for visibility */
+   height: 80vh;
+   width: 95vw;
+   top: 5%;
    overflow-y: auto; /* Enable vertical scrolling */
+
 }
 
 .btn {
+  top: 3%;
   position: relative;
-  left: 40%;
+  left: 95%;
+  height: 30px;
+  width: 30px;
+
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
+.txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90vw;
+}
+
+.wealthroneImg {
+  /* border-radius: 5%; */
+  height: 20%;
+}
 
 
 .mainText {
   padding-top: 3%;
+  width: 60vw;
 }
 
 

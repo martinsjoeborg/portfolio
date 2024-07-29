@@ -1,21 +1,23 @@
 import React from "react";
 import "./wealthroneModal.css"
+import wealthroneImg from "../../../../assets/img/wealthrone-pic.png"
 
 const WealthroneModal = ({ setWealthroneModalOpen }) => {
 
-  
+
 
     return ( 
         <div className="modal-container">
-            <div className="modal-content">
 
-                
-                <button onClick={() => setWealthroneModalOpen(false)} className="btn">X</button>
-                
+            <button onClick={() => setWealthroneModalOpen(false)} className="btn">X</button>
+
+            <div className="modal-content">
                 
                 <div className="txt">
 
                     <div className="title">Design and Developer Intern at Wealthrone Capital</div>
+
+                    <img src={wealthroneImg} alt="wealthrone-image" className="wealthroneImg"/>
 
                     <div className="mainText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
