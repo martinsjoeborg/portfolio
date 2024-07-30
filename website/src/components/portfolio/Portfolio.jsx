@@ -8,13 +8,6 @@ const Portfolio = () => {
 
     const [wealthroneModalOpen, setWealthroneModalOpen] = useState(false);
 
-    const setPlayBackSpeed = "";
-
-    // document.querySelector('video').defaultPlaybackRate = 2.0;
-    // document.querySelector('video').play();
-
-    document.querySelector('video');
-
     return (
 
         <div className="portfolio-main">

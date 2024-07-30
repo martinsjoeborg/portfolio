@@ -62,11 +62,19 @@
   left: 95%;
   height: 30px;
   width: 30px;
-
+  background-color: transparent;
+  color: red;
+  border: none;
+  font-size: 2rem;
+  /* font-family: mainTextFont; */
+  font-weight: bolder;
+  transition: all 0.2s ease-in-out; 
 }
 
 .btn:hover {
   cursor: pointer;
+  color: rgb(208, 0, 0);
+  /* transform: scale(1.1); */
 }
 
 .txt {
@@ -77,9 +85,25 @@
   width: 90vw;
 }
 
+.wealthrone-link {
+  color: white;
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  padding-bottom: 3%;
+  text-decoration: none;
+  color: rgb(11, 217, 131);
+  transition: all 0.2s ease-in-out; 
+}
+.wealthrone-link:hover {
+  /* transform: scale(1.1); */
+  text-decoration: none;
+  color: rgb(228, 195, 34);
+}
+
 .wealthroneImg {
   /* border-radius: 5%; */
-  height: 30%;
+  height: 25%;
 }
 
 .mainText {
