@@ -50,8 +50,8 @@ function App() {
 
 
       <Routes>
-        <Route path='/home' element={<LandingPage />} />
-        <Route path='/portfolio-page' element={<Portfolio WealthroneModal={WealthroneModal} />} />
+        <Route path='/portfolio/' element={<LandingPage />} />
+        <Route path='/portfolio-page/' element={<Portfolio WealthroneModal={WealthroneModal} />} />
       </Routes>
 
       <nav className="nav-container">
