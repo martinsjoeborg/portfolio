@@ -110,3 +110,8 @@ h2 {
   background-color: rgb(221, 221, 221);
   cursor: pointer;
 }
+
+.crypto-explorer:hover {
+  background-color: rgb(221, 221, 221);
+  cursor: pointer;
+}

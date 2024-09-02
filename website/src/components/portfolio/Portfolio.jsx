@@ -3,11 +3,13 @@ import wealthroneLogo from "../../assets/img/wealthrone-logo.png"
 import { useState } from "react";
 import WealthroneModal from "./portfolio-groups/wealthrone/wealthroneModal";
 import backVid from "../../assets/videos/backgroundVid.mp4";
+import CryptoExplorerModal from "./portfolio-groups/crypto-explorer/cryptoExplorerModal";
 
 const Portfolio = () => {
 
     const [wealthroneModalOpen, setWealthroneModalOpen] = useState(false);
-
+    const [cryptoExplorerModalOpen, setCryptoExplorerModalOpen] = useState(false);
+    
     return (
 
         <div className="portfolio-main">
@@ -15,9 +17,14 @@ const Portfolio = () => {
             { wealthroneModalOpen ?
                 <div>
                     <WealthroneModal setWealthroneModalOpen={setWealthroneModalOpen} />
-            
                 </div> :
-                <div></div>
+                <div>
+                    {cryptoExplorerModalOpen ?
+                        <div>
+                            <CryptoExplorerModal setCryptoExplorerModalOpen={setCryptoExplorerModalOpen}/>
+                        </div>
+                        : <div></div>}
+                </div>
             }
 
         <video autoPlay muted loop id="video" className="backVid">
@@ -34,7 +41,9 @@ const Portfolio = () => {
                         <img src={wealthroneLogo} alt="" className="wealthronelogo"/>
                     </div>
 
-                    <div className="crypto-explorer thing"></div>
+                    <div className="crypto-explorer thing" onClick={() => setCryptoExplorerModalOpen(true)}>
+                        
+                    </div>
                     <div className="restaurant thing"></div>
                     <div className="nodeChain thing"></div>
                     <div className="thing5 thing"></div>

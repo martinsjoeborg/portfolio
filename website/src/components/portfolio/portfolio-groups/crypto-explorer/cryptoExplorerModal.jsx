@@ -1,25 +1,25 @@
 import React from "react";
-import "./wealthroneModal.css"
-import wealthroneImg from "../../../../assets/img/wealthrone-pic.png"
+import "./cryptoExplorerModal.css"
+// import wealthroneImg from "../../../../assets/img/wealthrone-pic.png"
 
-const WealthroneModal = ({ setWealthroneModalOpen }) => {
+const CryptoExplorerModal = ({ setCryptoExplorerModalOpen }) => {
 
 
 
     return (
         <div className="modal-container">
 
-            <button onClick={() => setWealthroneModalOpen(false)} className="btn">ⓧ</button>
+            <button onClick={() => setCryptoExplorerModalOpen(false)} className="btn">ⓧ</button>
 
             <div className="modal-content">
                 
                 <div className="txt">
 
-                    <div className="title">Design and Developer Intern at Wealthrone Capital</div>
+                    <div className="title">Crypto Explorer</div>
 
                     <a href="https://www.wealthrone.com" className="wealthrone-link" target="blank">wealthrone.com</a>
 
-                    <img src={wealthroneImg} alt="wealthrone-image" className="wealthroneImg"/>
+                    {/* <img src={wealthroneImg} alt="wealthrone-image" className="wealthroneImg"/> */}
 
                     <div className="mainText">
                         From the fall of 2023 to the summer of 2024 I did an internship with the crypto hedge-fund company Wealthrone Capital.
@@ -61,4 +61,4 @@ const WealthroneModal = ({ setWealthroneModalOpen }) => {
      );
 }
  
-export default WealthroneModal;
+export default CryptoExplorerModal;
