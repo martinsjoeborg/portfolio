@@ -17,37 +17,44 @@ const CryptoExplorerModal = ({ setCryptoExplorerModalOpen }) => {
 
                     <div className="title">Crypto Explorer</div>
 
-                    <a href="https://www.wealthrone.com" className="wealthrone-link" target="blank">wealthrone.com</a>
+                    <a href="https://martinsjoeborg.github.io/crypto-explorer-website/" className="cryptoExplorer-link" target="blank">Website</a>
+                    <a href="https://github.com/martinsjoeborg/crypto-explorer-website" className="cryptoExplorer-link" target="blank">Github</a>
 
                     {/* <img src={wealthroneImg} alt="wealthrone-image" className="wealthroneImg"/> */}
 
                     <div className="mainText">
-                        From the fall of 2023 to the summer of 2024 I did an internship with the crypto hedge-fund company Wealthrone Capital.
+                        For my degree project during the higher vocational education at Medieinstitutet, I decided to combine all the skills 
+                        and knowledge I had gained during the programme.
                         <br />
                         <br />
-                        This was my first time doing an internship and it was one of the best experiences I've had.
-                        I found Wealthrone while doing research for crypto-related businesses in northern Europe.
-                        It is a start-up company with great potential. Their main focus is to bring stability to the crypto market and utilize its volatility. This way they can attract and help more clients that are unsure of investing in crypto.
+                        I wanted to create something that would be valuable for people like myself, that are interested in learing the 
+                        utilities of cryptocurrencies but don't want to use "real" money to get first hand experience.
                         <br />
                         <br />
-                        When I got to Wealthrone they already had a website but they wanted to update and modernize it.
-                        We exchanged many great ideas and discussed different design layouts and functionallity.
+                        After many brainstorming sessions I finally decided what I would do, a website that would let users simulate
+                        some of the most popular use cases in crypto without needing to use their money. I wanted to include DeFi, DAO and NFT
+                        functionality. Altough I only had enough time to create the DeFi functionality but I'm working on implementing DAO and NFT 
+                        functionality later on.
                         <br /><br />
-                        I created different design-prototypes so that the company could more easily see what they wanted and 
-                        what they didn't want. For this, I had to learn a new program called "Figma". This was a very effective tool 
-                        to use for this specific problem. It was fun to use and to see how the website would look before I started coding.
+                        To use the site the user needs a Metamask wallet, connected to the Sepolia test network, have SeploiaETH in your wallet and
+                        import the XPLRCOIN token to that wallet. If the user lack any of these requirements, a guide is located on the main page.
                         <br /><br />
-                        So the company wanted a website that they could easily update and add things to without the need
-                        of knowing how to code. They already had a website made with WIX and they wanted to be able to 
-                        continue using WIX if possible, to update the new website in the future. Therefore, I decided to use WIX's own 
-                        native coding language "Velo". Velo is very similar to JavaScript so it was quite nice to see how I
-                        could utilize my JS skills when working with a web-builder.
+                        If the user has these things, the user can swap sepoliaETH to get some XPLRCOIN, stake their XPLRCOIN's to get rewards, borrow XPLRCOIN's and lend out 
+                        XPLRCOIN's.
                         <br /><br />
-                        The whole process took about 10 weeks to complete. It was an incredible experience and I have grown a lot both
-                        as a person but also a developer. Many of the tasks I was given were completely new to me and I had to find ways
-                        to solve the taks mostly by myself. 
+                        <b>I used the following tech-stack for this project:</b>
+                        <br />
+                        Vite ReactJS for frontend
+                        <br />
+                        web3JS library to connect frontend to contracts
+                        <br />
+                        Solidity to create tokens and smart contracts
+
+
                         <br /><br />
-                        The company was satisfied with the end-result and I will continue to work for them on different website designs and functionallity in the future.
+                        From working on this project, I have learned how to create tokens on the sepolia network,
+                        construct smart contracts with solidity that lets a user swap, stake, borrow and lend tokens.
+                        I have also learned a lot about deploying React Vite projects to Github Pages.
                         <br /><br />
                         - Martin
 

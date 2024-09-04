@@ -19,7 +19,7 @@ const WealthroneModal = ({ setWealthroneModalOpen }) => {
 
                     <a href="https://www.wealthrone.com" className="wealthrone-link" target="blank">wealthrone.com</a>
 
-                    <img src={wealthroneImg} alt="wealthrone-image" className="wealthroneImg"/>
+                    {/* <img src={wealthroneImg} alt="wealthrone-image" className="wealthroneImg"/> */}
 
                     <div className="mainText">
                         From the fall of 2023 to the summer of 2024 I did an internship with the crypto hedge-fund company Wealthrone Capital.

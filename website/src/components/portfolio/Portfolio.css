@@ -103,6 +103,12 @@ h2 {
   /* background-size: 100% 100%; */
   height: 100px;
 }
+.thing .cryptoExplorerLogo {
+  /* background-image:url("../../assets/img/wealthrone-logo.png"); */
+  background-size: cover;
+  /* background-size: 100% 100%; */
+  height: 30px;
+}
 
 
 

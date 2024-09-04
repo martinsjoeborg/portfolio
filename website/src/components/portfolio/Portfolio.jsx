@@ -1,4 +1,5 @@
 import "./Portfolio.css"
+import cryptoExplorerLogo from "../../assets/img/Crypto_Explorer.png"
 import wealthroneLogo from "../../assets/img/wealthrone-logo.png"
 import { useState } from "react";
 import WealthroneModal from "./portfolio-groups/wealthrone/wealthroneModal";
@@ -42,7 +43,7 @@ const Portfolio = () => {
                     </div>
 
                     <div className="crypto-explorer thing" onClick={() => setCryptoExplorerModalOpen(true)}>
-                        
+                        <img src={cryptoExplorerLogo} alt="" className="cryptoExplorerLogo"/>
                     </div>
                     <div className="restaurant thing"></div>
                     <div className="nodeChain thing"></div>
