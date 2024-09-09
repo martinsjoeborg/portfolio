@@ -5,11 +5,13 @@ import { useState } from "react";
 import WealthroneModal from "./portfolio-groups/wealthrone/wealthroneModal";
 import backVid from "../../assets/videos/backgroundVid.mp4";
 import CryptoExplorerModal from "./portfolio-groups/crypto-explorer/cryptoExplorerModal";
+import VotingSystemModal from "./portfolio-groups/voting-system/VotingSystemModal";
 
 const Portfolio = () => {
 
     const [wealthroneModalOpen, setWealthroneModalOpen] = useState(false);
     const [cryptoExplorerModalOpen, setCryptoExplorerModalOpen] = useState(false);
+    const [votingSystemModalOpen, setVotingSystemModalOpen] = useState(false);
     
     return (
 
@@ -24,7 +26,14 @@ const Portfolio = () => {
                         <div>
                             <CryptoExplorerModal setCryptoExplorerModalOpen={setCryptoExplorerModalOpen}/>
                         </div>
-                        : <div></div>}
+                        :
+                        <div>
+                            {votingSystemModalOpen ?
+                                <div>
+                                    <VotingSystemModal setVotingSystemModalOpen={setVotingSystemModalOpen} />
+                                </div> :
+                                <div></div>}
+                        </div>}
                 </div>
             }
 
@@ -45,7 +54,9 @@ const Portfolio = () => {
                     <div className="crypto-explorer thing" onClick={() => setCryptoExplorerModalOpen(true)}>
                         <img src={cryptoExplorerLogo} alt="" className="cryptoExplorerLogo"/>
                     </div>
-                    <div className="restaurant thing"></div>
+                    <div className="votingSystem thing">
+                        
+                    </div>
                     <div className="nodeChain thing"></div>
                     <div className="thing5 thing"></div>
                     <div className="thing6 thing"></div>
