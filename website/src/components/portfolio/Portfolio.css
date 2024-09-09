@@ -109,7 +109,11 @@ h2 {
   /* background-size: 100% 100%; */
   height: 30px;
 }
-
+.thing .votingSystemLogo{
+  background-size: cover;
+  /* background-size: 100% 100%; */
+  height: 35px;
+}
 
 
 .wealthrone:hover {
@@ -118,6 +122,10 @@ h2 {
 }
 
 .crypto-explorer:hover {
+  background-color: rgb(221, 221, 221);
+  cursor: pointer;
+}
+.votingSystem:hover {
   background-color: rgb(221, 221, 221);
   cursor: pointer;
 }

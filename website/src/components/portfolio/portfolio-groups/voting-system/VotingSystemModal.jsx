@@ -15,33 +15,33 @@ const VotingSystemModal = ({ setVotingSystemModalOpen }) => {
                 
                 <div className="txt">
 
-                    <div className="title">Crypto Explorer</div>
+                    <div className="title">Voting System</div>
 
-                    <a href="https://martinsjoeborg.github.io/crypto-explorer-website/" className="cryptoExplorer-link" target="blank">Website</a>
-                    <a href="https://github.com/martinsjoeborg/crypto-explorer-website" className="cryptoExplorer-link" target="blank">Github</a>
+                    <a href="https://martinsjoeborg.github.io/voting-system/" className="votingSystem-link" target="blank">Website</a>
+                    <a href="https://github.com/martinsjoeborg/voting-system" className="votingSystem-link" target="blank">Github</a>
 
                     {/* <img src={wealthroneImg} alt="wealthrone-image" className="wealthroneImg"/> */}
 
-                    <div className="mainText">
-                        For my degree project during the higher vocational education at Medieinstitutet, I decided to combine all the skills 
-                        and knowledge I had gained during the programme.
+                    <div className="mainTextVoting">
+                        I small hobby-project I had a lot of fun working with. I made this on my free-time while studying.
                         <br />
                         <br />
-                        I wanted to create something that would be valuable for people like myself, that are interested in learing the 
-                        utilities of cryptocurrencies but don't want to use "real" money to get first hand experience.
+                        I wanted to explore the way I could utilize blockchain to construct a effective and safe voting system.
                         <br />
                         <br />
-                        After many brainstorming sessions I finally decided what I would do, a website that would let users simulate
-                        some of the most popular use cases in crypto without needing to use their money. I wanted to include DeFi, DAO and NFT
-                        functionality. Altough I only had enough time to create the DeFi functionality but I'm working on implementing DAO and NFT 
-                        functionality later on.
+                        <b>As a user:</b> When landing on the main page, you will connect your Metamask wallet to the site.
+                        When connected, you can stake 0.01 sepoliaETH to join the community of voters. When you have staked, 
+                        you will see a list of proposals. These are suggestions on what to do with the pool of tokens that builds
+                        from the total amount staked from the contributors. Vote on the proposal you want and sign with your wallet.
+                        You can only vote once so choose your vote carefully.Your vote will be stored on the sepolia test network (a blockchain) so you can
+                        be sure that no one will tamper with or manipulate it.
                         <br /><br />
-                        To use the site the user needs a Metamask wallet, connected to the Sepolia test network, have SeploiaETH in your wallet and
-                        import the XPLRCOIN token to that wallet. If the user lack any of these requirements, a guide is located on the main page.
+                        <b>As admin:</b> There is an admin page as well but only the creator of the 
+                        smart contract will be able to see this. The admin can propose things and has the
+                        authority to pull out the total stack when it's time to use the tokens. The admin is
+                        not allowed to vote on proposals.
                         <br /><br />
-                        If the user has these things, the user can swap sepoliaETH to get some XPLRCOIN, stake their XPLRCOIN's to get rewards, borrow XPLRCOIN's and lend out 
-                        XPLRCOIN's.
-                        <br /><br />
+                        
                         <b>I used the following tech-stack for this project:</b>
                         <br />
                         Vite ReactJS for frontend
@@ -52,9 +52,9 @@ const VotingSystemModal = ({ setVotingSystemModalOpen }) => {
 
 
                         <br /><br />
-                        From working on this project, I have learned how to create tokens on the sepolia network,
-                        construct smart contracts with solidity that lets a user swap, stake, borrow and lend tokens.
-                        I have also learned a lot about deploying React Vite projects to Github Pages.
+                        I have learned many things about decentralized governance while working on this project.
+                        It's not a perfect DAO or consenus system but it helped me understand the fundamentals
+                        a bit better. I enjoyed sharpening my skills in react, web3JS and Solidity during this project.
                         <br /><br />
                         - Martin
 

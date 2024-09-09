@@ -1,6 +1,7 @@
 import "./Portfolio.css"
 import cryptoExplorerLogo from "../../assets/img/Crypto_Explorer.png"
 import wealthroneLogo from "../../assets/img/wealthrone-logo.png"
+import votingSystemLogo from "../../assets/img/Voting_System.png"
 import { useState } from "react";
 import WealthroneModal from "./portfolio-groups/wealthrone/wealthroneModal";
 import backVid from "../../assets/videos/backgroundVid.mp4";
@@ -54,8 +55,8 @@ const Portfolio = () => {
                     <div className="crypto-explorer thing" onClick={() => setCryptoExplorerModalOpen(true)}>
                         <img src={cryptoExplorerLogo} alt="" className="cryptoExplorerLogo"/>
                     </div>
-                    <div className="votingSystem thing">
-                        
+                    <div className="votingSystem thing" onClick={() => setVotingSystemModalOpen(true)}>
+                        <img src={votingSystemLogo} alt="" className="votingSystemLogo"/>
                     </div>
                     <div className="nodeChain thing"></div>
                     <div className="thing5 thing"></div>
