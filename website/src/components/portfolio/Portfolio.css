@@ -94,7 +94,7 @@ h2 {
   flex: 0 0 auto; /* Maintain size and prevent resizing */
   margin-right: 10px; /* Add spacing between divs */
   transition: all 0.2s ease-in-out;
-  /* border-radius: 1%; */
+  /* border-radius: 2%; */
 }
 
 .thing .wealthronelogo {
@@ -114,6 +114,11 @@ h2 {
   /* background-size: 100% 100%; */
   height: 35px;
 }
+.thing .nodeChainLogo{
+  background-size: cover;
+  /* background-size: 100% 100%; */
+  height: 45px;
+}
 
 
 .wealthrone:hover {
@@ -126,6 +131,10 @@ h2 {
   cursor: pointer;
 }
 .votingSystem:hover {
+  background-color: rgb(221, 221, 221);
+  cursor: pointer;
+}
+.nodeChain:hover {
   background-color: rgb(221, 221, 221);
   cursor: pointer;
 }

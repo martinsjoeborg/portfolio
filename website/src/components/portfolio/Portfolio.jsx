@@ -2,17 +2,20 @@ import "./Portfolio.css"
 import cryptoExplorerLogo from "../../assets/img/Crypto_Explorer.png"
 import wealthroneLogo from "../../assets/img/wealthrone-logo.png"
 import votingSystemLogo from "../../assets/img/Voting_System.png"
+import nodeChainLogo from "../../assets/img/nodeChainLogo.png"
 import { useState } from "react";
 import WealthroneModal from "./portfolio-groups/wealthrone/wealthroneModal";
 import backVid from "../../assets/videos/backgroundVid.mp4";
 import CryptoExplorerModal from "./portfolio-groups/crypto-explorer/cryptoExplorerModal";
 import VotingSystemModal from "./portfolio-groups/voting-system/VotingSystemModal";
+import NodeChainModal from "./portfolio-groups/nodeChain/NodeChainModal";
 
 const Portfolio = () => {
 
     const [wealthroneModalOpen, setWealthroneModalOpen] = useState(false);
     const [cryptoExplorerModalOpen, setCryptoExplorerModalOpen] = useState(false);
     const [votingSystemModalOpen, setVotingSystemModalOpen] = useState(false);
+    const [nodeChainModalOpen, setNodeChainModalOpen] = useState(false);
     
     return (
 
@@ -33,7 +36,13 @@ const Portfolio = () => {
                                 <div>
                                     <VotingSystemModal setVotingSystemModalOpen={setVotingSystemModalOpen} />
                                 </div> :
-                                <div></div>}
+                                <div>
+                                    {nodeChainModalOpen ?
+                                        <div>
+                                            <NodeChainModal setNodeChainModalOpen={setNodeChainModalOpen}/>
+                                        </div> :
+                                        <div></div>}
+                                </div>}
                         </div>}
                 </div>
             }
@@ -58,7 +67,9 @@ const Portfolio = () => {
                     <div className="votingSystem thing" onClick={() => setVotingSystemModalOpen(true)}>
                         <img src={votingSystemLogo} alt="" className="votingSystemLogo"/>
                     </div>
-                    <div className="nodeChain thing"></div>
+                    <div className="nodeChain thing" onClick={() => setNodeChainModalOpen(true)}>
+                        <img src={nodeChainLogo} alt="" className="nodeChainLogo"/>
+                    </div>
                     <div className="thing5 thing"></div>
                     <div className="thing6 thing"></div>
                     
