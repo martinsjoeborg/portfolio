@@ -17,7 +17,7 @@ const NodeChainModal = ({ setNodeChainModalOpen }) => {
 
                     <div className="title">Node Chain ⛓️</div>
 
-                    <a href="https://github.com/martinsjoeborg/nodeChain-assignment" className="cryptoExplorer-link" target="blank">Github</a>
+                    <a href="https://github.com/martinsjoeborg/nodeChain-assignment" className="nodeChain-link" target="blank">Github</a>
 
                     {/* <img src={wealthroneImg} alt="wealthrone-image" className="wealthroneImg"/> */}
 

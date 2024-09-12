@@ -3,11 +3,9 @@
 .about-main {
     position: relative;
     height: 100vh;
-    /* width: 100vw; */
     background-color: black;
     background-size: cover;
     overflow-x: hidden;
-    cursor: none;
     color: white;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -16,14 +14,25 @@
     font-variation-settings: "slnt" 0;
     display: flex;
     justify-content: center;
+    align-items: center; /* Center items vertically */
 }
+
 .about-content {
-    position: relative;
-    top: -20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 40vw;
-    text-align: center;
+    text-align: left;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    /* Remove top positioning */
 }
+
+.oceanPic {
+    height: 350px;
+    border-radius: 10%;
+    margin-top: 20px; /* Add space between text and image */
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+}
+

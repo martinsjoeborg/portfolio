@@ -118,6 +118,7 @@
     width: 60vw;
     letter-spacing: 2px;
     line-height: 40px;
+    text-align: left;
   }
   .mainTextVoting b {
     color: rgb(33, 255, 207);
