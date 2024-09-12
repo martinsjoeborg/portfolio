@@ -7,19 +7,19 @@ import About from './components/about/About.jsx';
 import WealthroneModal from './components/portfolio/portfolio-groups/wealthrone/wealthroneModal.jsx';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Resume from './components/resume/Resume.jsx';
+import Contact from './components/contact/Contact.jsx';
 
 function App() {
 
   const [showPortfolio, setShowPortfolio] = useState(true);
   const [showAbout, setShowAbout] = useState(false);
-  const [showResume, setShowResume] = useState(false);
+  const [showContact, setShowContact] = useState(false);
 
   function handlePortfolioClick(e) {
     e.preventDefault();
     setShowPortfolio(true);
     setShowAbout(false);
-    setShowResume(false);
+    setShowContact(false);
     document.getElementById('page2').scrollIntoView({ behavior: 'smooth' });
     return false; // Prevent default action
   }
@@ -28,16 +28,16 @@ function App() {
     e.preventDefault();
     setShowPortfolio(false);
     setShowAbout(true);
-    setShowResume(false);
+    setShowContact(false);
     document.getElementById('page2').scrollIntoView({ behavior: 'smooth' });
     return false;
   }
   
-  function handleResumeClick(e) {
+  function handleContactClick(e) {
     e.preventDefault();
     setShowPortfolio(false);
     setShowAbout(false);
-    setShowResume(true);
+    setShowContact(true);
     document.getElementById('page2').scrollIntoView({ behavior: 'smooth' });
     return false;
   }
@@ -58,7 +58,7 @@ function App() {
         <ul className="ul-container">
           <a href='#page2' className="li-portfolio" onClick={handlePortfolioClick}>Portfolio</a>
           <a href='#page2' className="li-about" onClick={handleAboutClick}>About</a>
-          <a href='#page2' className="li-resume" onClick={handleResumeClick}>Resume</a>
+          <a href='#page2' className="li-Contact" onClick={handleContactClick}>Contact</a>
 
         </ul>
       </nav>
@@ -69,7 +69,7 @@ function App() {
           <div>
             {showAbout ? <About /> :
             <div>
-              {showResume ? <Resume />:null}
+              {showContact ? <Contact />:null}
             </div> }
           </div>
         
