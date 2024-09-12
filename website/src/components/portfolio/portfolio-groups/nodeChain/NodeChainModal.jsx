@@ -22,38 +22,33 @@ const NodeChainModal = ({ setNodeChainModalOpen }) => {
                     {/* <img src={wealthroneImg} alt="wealthrone-image" className="wealthroneImg"/> */}
 
                     <div className="mainText">
-                        For my degree project during the higher vocational education at Medieinstitutet, I decided to combine all the skills 
-                        and knowledge I had gained during the programme.
+                        This project was part of a school assignment where we, the students,
+                        were supposed to create a simulation of a blockchain with NodeJS.
                         <br />
                         <br />
-                        I wanted to create something that would be valuable for people like myself, that are interested in learing the 
-                        utilities of cryptocurrencies but don't want to use "real" money to get first hand experience.
+                        I recreated a simulation of the Bitcoin blockchain and tried to do it as accurately as possible.
                         <br />
                         <br />
-                        After many brainstorming sessions I finally decided what I would do, a website that would let users simulate
-                        some of the most popular use cases in crypto without needing to use their money. I wanted to include DeFi, DAO and NFT
-                        functionality. Altough I only had enough time to create the DeFi functionality but I'm working on implementing DAO and NFT 
-                        functionality later on.
+                        When adding a new transaction to the chain, a consensus mechanism validates the data,
+                        and a proof of work hashing function hash's the transaction data. This is to ensure that the data stays 
+                        immutable.
                         <br /><br />
-                        To use the site the user needs a Metamask wallet, connected to the Sepolia test network, have SeploiaETH in your wallet and
-                        import the XPLRCOIN token to that wallet. If the user lack any of these requirements, a guide is located on the main page.
+                        I created a frontend to interact with the blockchain. The user can add a new transaction to the pendinglist
+                        of the blockchain,
+                        mining a new block needs to be done manually by going to the endpoint "http://localhost:3001/api/v1/blockchain/mine-block"
                         <br /><br />
-                        If the user has these things, the user can swap sepoliaETH to get some XPLRCOIN, stake their XPLRCOIN's to get rewards, borrow XPLRCOIN's and lend out 
-                        XPLRCOIN's.
+                        Once the block is mined, the user can list the entire chain or select a specific block in the chain by
+                        typing the block's nonce.
                         <br /><br />
-                        <b>I used the following tech-stack for this project:</b>
-                        <br />
-                        Vite ReactJS for frontend
-                        <br />
-                        web3JS library to connect frontend to contracts
-                        <br />
-                        Solidity to create tokens and smart contracts
+                        I have used NodeJS to construct the blockchain and the functionalities. And ReactJS to build the frontend.
+                        I used postman for testing the endpoints. 
 
 
                         <br /><br />
-                        From working on this project, I have learned how to create tokens on the sepolia network,
-                        construct smart contracts with solidity that lets a user swap, stake, borrow and lend tokens.
-                        I have also learned a lot about deploying React Vite projects to Github Pages.
+                        The project was really fun and I learned so much about blockchain development, server development, hashing, 
+                        routing and controllers. The project gave me a better understanding of how a proof of work blockchain fundamentaly
+                        operates and I look forward to experiment more on different consensus algorithms in the future.
+
                         <br /><br />
                         - Martin
 
