@@ -10,6 +10,7 @@ h2 {
     letter-spacing: 3px;
     z-index: 2;
     color: rgb(11, 217, 131);
+    
 }
 
 .portfolio-main {
@@ -95,7 +96,9 @@ h2 {
   flex: 0 0 auto; /* Maintain size and prevent resizing */
   margin-right: 10px; /* Add spacing between divs */
   transition: all 0.2s ease-in-out;
-  /* border-radius: 2%; */
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
 
 .thing .wealthronelogo {

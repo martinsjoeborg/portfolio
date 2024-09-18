@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
+.about-content h2 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    color: rgb(11, 217, 131);
+}
+
 .about-main {
     position: relative;
     height: 100vh;
@@ -31,7 +44,7 @@
 
 .oceanPic {
     height: 350px;
-    border-radius: 10%;
+    border-radius: 50px;
     margin-top: 20px; /* Add space between text and image */
     max-width: 100%; /* Ensure the image does not exceed the container width */
 }
