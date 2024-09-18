@@ -62,3 +62,11 @@ form button:hover {
     color: black;
     
 }
+
+@media screen and (max-width: 1550px) {
+    
+    .input-box .field.mess {
+        height: 100px;
+        resize: none;
+    }
+}
