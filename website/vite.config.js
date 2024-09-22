@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     // nodePolyfills()
   ],
-  base: '/portfolio/'
+  // base: '/portfolio/'
 });

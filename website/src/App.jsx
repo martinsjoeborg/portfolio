@@ -50,7 +50,7 @@ function App() {
 
 
       <Routes>
-        <Route path='/portfolio/' element={<LandingPage />} />
+        <Route path='/' element={<LandingPage />} />
         <Route path='/portfolio-page/' element={<Portfolio WealthroneModal={WealthroneModal} />} />
       </Routes>
 
